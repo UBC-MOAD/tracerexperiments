@@ -1,0 +1,74 @@
+# Model parameters
+# Continuous equation parameters
+ &PARM01
+ viscAz=1.E-2,
+ viscAh=1.E-2,
+ viscC2Smag=2.2,
+ useJamartWetPoints=.TRUE.,
+ viscAhGridMax=1.0,
+ implicitDiffusion=.TRUE.,
+ implicitViscosity=.TRUE.,
+ no_slip_sides=.TRUE.,
+ no_slip_bottom=.TRUE.,
+ ViscAhRemax=10,
+ ViscAhGridMin=0.01,
+ useStrainTensionVisc=.TRUE.,
+ ivdc_kappa=0., 
+ diffKhT=0.0,
+ diffKzT=1.E-5,
+ diffKhS=0.0,
+ diffKzS=1.E-5,
+ f0=9.66E-5,
+ beta=0.E-11,
+ tAlpha=2.E-4,
+ sBeta =7.4E-4,
+ gravity=9.81,
+ rigidLid=.FALSE.,
+ implicitFreeSurface=.TRUE.,
+ readBinaryPrec=64,
+ hFacMin=0.1,
+ nonHydrostatic=.FALSE., 
+ saltAdvScheme=33,
+ tempAdvScheme=33,
+ staggerTimeStep=.TRUE.,
+ bottomDragQuadratic=0.002,
+ vectorInvariantMomentum=.TRUE.,
+ &
+# Elliptic solver parameters
+ &PARM02
+ cg2dMaxIters=200,
+ cg2dTargetResidual=1.E-7,
+ &
+# Time stepping parameters
+ &PARM03
+ nIter0=0,
+ nTimeSteps=19440, 
+ deltaT=40,
+# pChkptFreq=259200.0,
+ chkptFreq=10800.0,
+ dumpFreq=43200.0,
+# monitorFreq=43200.0,
+ periodicExternalForcing=.FALSE.,
+# externForcingPeriod=40,
+# externForcingCycle=86400.0,
+ &
+# Gridding parameters
+ &PARM04
+ usingCartesianGrid=.TRUE.,
+ ygOrigin=0.,
+ delXfile='delx_360x360_NonUni_BarkleyLikeQuad.bin',
+ delYfile='dely_360x360_NonUni_BarkleyLikeQuad.bin',
+ delZ= 5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,
+ 5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,10.,10.,10.,10.,10.,10.,10.,10.,10.,
+ 20.,20.,20.,20.,20.,20.,20.,20.,20.,20.,20.,20.,20.,20.,20.,20.,20.,20.,
+ 20.,20.,20.,20.,20.,20.,20.,20.,20.,20.,20.,20.,20.,20.,20.,20.,20.,20.,
+ 20.,20.,20.,20.,20.,20.,20.,20.,20.,20.,20.
+ &
+ &PARM05
+ bathyFile='../../InputFiles/bathy_smooth_360x360_NonUni_BarkleyLikeQuad.bin',
+ hydrogThetaFile='../../InputFiles/Lintmp90zlev_360x360.bin',
+ hydrogSaltFile='../../InputFiles/Linsal90zlev_360x360.bin'
+ zonalWindFile='',
+ meridWindFile='',
+ diffKrFile='../../InputFiles/KrDiff1E_3_90zlev_360x360.bin',
+ &
