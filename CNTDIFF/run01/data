@@ -13,7 +13,7 @@
  ViscAhRemax=10,
  ViscAhGridMin=0.01,
  useStrainTensionVisc=.TRUE.,
- ivdc_kappa=0., 
+ ivdc_kappa=10.,
  diffKhT=0.0,
  diffKzT=1.E-5,
  diffKhS=0.0,
@@ -70,5 +70,4 @@
  hydrogSaltFile='../../InputFiles/Linsal90zlev_360x360.bin'
  zonalWindFile='',
  meridWindFile='',
- diffKrFile='../../InputFiles/KrDiff1E_3_90zlev_360x360.bin',
  &
