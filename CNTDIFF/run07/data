@@ -13,7 +13,7 @@
  ViscAhRemax=10,
  ViscAhGridMin=0.01,
  useStrainTensionVisc=.TRUE.,
- ivdc_kappa=0., 
+ ivdc_kappa=10.,
  diffKhT=0.0,
  diffKzT=1.E-5,
  diffKhS=0.0,
@@ -56,8 +56,8 @@
  &PARM04
  usingCartesianGrid=.TRUE.,
  ygOrigin=0.,
- delXfile='../../InputFiles/delx_360x360_NonUni_BarkleyLikeQuad.bin',
- delYfile='../../InputFiles/dely_360x360_NonUni_BarkleyLikeQuad.bin',
+ delXfile='../../InputFiles/delx_360x360_NonUni_NoCanyonQuad.bin',
+ delYfile='../../InputFiles/dely_360x360_NonUni_NoCanyonQuad.bin',
  delZ= 5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,
  5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,10.,10.,10.,10.,10.,10.,10.,10.,10.,
  20.,20.,20.,20.,20.,20.,20.,20.,20.,20.,20.,20.,20.,20.,20.,20.,20.,20.,
@@ -65,10 +65,9 @@
  20.,20.,20.,20.,20.,20.,20.,20.,20.,20.,20.
  &
  &PARM05
- bathyFile='../../InputFiles/bathy_smooth_360x360_NonUni_BarkleyLikeQuad.bin',
+ bathyFile='../../InputFiles/bathy_smooth_360x360_NonUni_NoCanyonQuad.bin',
  hydrogThetaFile='../../InputFiles/Lintmp90zlev_360x360.bin',
  hydrogSaltFile='../../InputFiles/Linsal90zlev_360x360.bin'
  zonalWindFile='',
  meridWindFile='',
- diffKrFile='../../InputFiles/KrDiff1E_3_90zlev_360x360.bin',
  &
