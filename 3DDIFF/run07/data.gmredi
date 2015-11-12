@@ -15,7 +15,7 @@
  GM_Kmin_horiz=1.E-5,
  GM_taper_scheme='clipping',
  GM_maxSlope=1.E-02,
- GM_isopycK=0.1,                            
+ GM_isopycK=1.0,                            
  GM_AdvForm=.TRUE.,
  &      
 
