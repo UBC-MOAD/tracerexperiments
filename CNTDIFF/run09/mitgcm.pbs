@@ -1,0 +1,26 @@
+#!/bin/bash
+#PBS -S /bin/bash 
+#PBS -l mem=756mb
+#PBS -l walltime=48:00:00
+#PBS -l procs=16
+#PBS -m ae -M kramosmu@eos.ubc.ca
+
+cd $PBS_O_WORKDIR
+
+module load intel
+module load intel/14.0/netcdf_hdf5
+
+
+echo "Current working directory is `pwd`"
+
+echo "Node file: $PBS_NODEFILE :"
+echo "---------------------"
+cat $PBS_NODEFILE
+echo "---------------------"
+NUM_PROCS=`/bin/awk 'END {print NR}' $PBS_NODEFILE`
+echo "Running on $NUM_PROCS processors."
+
+echo "Starting run at: `date`"
+mpirun ./mitgcmuv 
+
+echo "Job finished at: `date`"
