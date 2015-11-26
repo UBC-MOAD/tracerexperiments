@@ -10,7 +10,6 @@ cd $PBS_O_WORKDIR
 module load intel
 module load intel/14.0/netcdf_hdf5
 
-
 echo "Current working directory is `pwd`"
 
 echo "Node file: $PBS_NODEFILE :"
