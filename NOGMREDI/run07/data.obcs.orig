@@ -1,6 +1,5 @@
 # Open-boundaries
  &OBCS_PARM01
-
  OB_Jsouth=360*0.5,
  OB_Jnorth=360*0.5,
  useOBCSsponge=.FALSE.,
