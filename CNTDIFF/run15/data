@@ -42,10 +42,10 @@
 # Time stepping parameters
  &PARM03
  nIter0=0,
- nTimeSteps=19440, 
- deltaT=40,
+ nTimeSteps=300, 
+ deltaT=20,
 # pChkptFreq=259200.0,
- chkptFreq=10800.0,
+ chkptFreq=80.0,
  dumpFreq=43200.0,
 # monitorFreq=43200.0,
  periodicExternalForcing=.FALSE.,
