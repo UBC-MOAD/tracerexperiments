@@ -43,10 +43,10 @@
  &PARM03
  nIter0=0,
  nTimeSteps=38880, 
- deltaT=20,
+ deltaT=40,
 # pChkptFreq=259200.0,
- chkptFreq=10800.0,
- dumpFreq=43200.0,
+ chkptFreq=21600.0,
+ dumpFreq=21600.0,
 # monitorFreq=43200.0,
  periodicExternalForcing=.FALSE.,
 # externForcingPeriod=40,
@@ -66,8 +66,8 @@
  &
  &PARM05
  bathyFile='../../InputFiles/bathy_smooth_360x360_NonUni_BarkleyLikeQuad.bin',
- hydrogThetaFile='../../InputFiles/Lintmp_N006_90zlev_360x360.bin',
- hydrogSaltFile='../../InputFiles/Linsal_N006_90zlev_360x360.bin',
+ hydrogThetaFile='../../InputFiles/Lintmp90zlev_360x360.bin',
+ hydrogSaltFile='../../InputFiles/Linsal90zlev_360x360.bin'
  zonalWindFile='',
  meridWindFile='',
  &
