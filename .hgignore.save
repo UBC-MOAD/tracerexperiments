@@ -1,0 +1,24 @@
+syntax: glob
+
+*.mp4
+*.data
+*.meta
+*.ipynb_checkpoints
+.nfs000000000aaa0d9400000335
+.png
+*.pdf
+*.eps
+*.png
+*checkpoint*
+STD*
+mitgcm.pbs.*
+*.nc
+*.F
+*.f
+*.o
+*.h
+*.log
+*.bin
+Makefile
+Makefile.bak
+*.c
