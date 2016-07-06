@@ -22,3 +22,4 @@ mitgcm.pbs.*
 Makefile
 Makefile.bak
 *.c
+*~
