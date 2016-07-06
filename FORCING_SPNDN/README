@@ -1,0 +1,43 @@
+This experiment has a body forcing that does what I originally though the other one was doing: 
+Ramp up during 1st day, constant next day and then off.
+
+In external_forcing.F I modified Jessica's to cut the forcing after a time ST+FT (sr = 0  and delete last ELSEIF):
+
+
+C---Forcing Time, time Umax is applied
+      FT=86400*1
+      
+C---Short Time, ramp up time before starting a constant forcing
+      ST=86400*1
+
+C---Max. Velocity U-dir at Coast (m/s)
+      Umax= 0.315
+C-- Final, steady forcing ratio
+      sr = 0.0
+C---Max. Forcing at Coast (accel.)
+      gUmax=Umax/(FT + ST/2.)
+C---Slope of forcing
+      alpha=gUmax/ST
+       DO j=jMin,jMax
+        DO i=iMin,iMax
+           IF (myTime.LE.ST) THEN
+             bf(i,j)=alpha*myTime  
+     &   *(yC(i, j, bi, bj) /(90000-35000))
+     &   *_hFacW(i,j,kLev,bi,bj)
+             ELSE IF (myTime.LE.FT+ST) THEN
+                bf(i,j)= alpha*ST*(yC(i, j, bi, bj)/(90000-35000))
+     &   *_hFacW(i,j,kLev,bi,bj)   
+                         ELSE
+                            bf(i,j)=sr*alpha*ST
+     &   *(yC(i, j, bi, bj) /(90000-35000))
+     &   *_hFacW(i,j,kLev,bi,bj)
+             ENDIF
+        ENDDO
+       ENDDO
+C---Changed maskW(i,j,klev,bi,bj) for hFacW(i,j,klev,bi,bj) in the do(do)) loop KRM 31-oct-14      
+       DO j=jMin,jMax
+        DO i=iMin,iMax
+           gU(i,j,kLev,bi,bj) = gU(i,j,kLev,bi,bj)+bf(i,j)
+ENDDO
+ENDDO
+
