@@ -11,5 +11,5 @@
  PTRACERS_useKPP(1)=.FALSE. ,
  PTRACERS_diffKh(1)=0.0,
  PTRACERS_diffKr(1)=1.E-7,
- PTRACERS_initialFile(1)='~/MITgcm_June20152005/MITgcm/TracerExperiments/InputFiles/Linnit90zlev_360x360.bin',
+ PTRACERS_initialFile(1)='../../InputFiles/Linnit90zlev_360x360.bin',
   &

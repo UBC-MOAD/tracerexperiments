@@ -52,8 +52,8 @@
  &PARM04
  usingCartesianGrid=.TRUE.,
  ygOrigin=0.,
- delXfile='~/MITgcm_June20152005/MITgcm/TracerExperiments/InputFiles/delx_360x360_NonUni_BarkleyLikeQuad.bin',
- delYfile='~/MITgcm_June20152005/MITgcm/TracerExperiments/InputFiles/dely_360x360_NonUni_BarkleyLikeQuad.bin',
+ delXfile='../../InputFiles/delx_360x360_NonUni_BarkleyLikeQuad.bin',
+ delYfile='../../InputFiles/dely_360x360_NonUni_BarkleyLikeQuad.bin',
  delZ= 5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,
  5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,10.,10.,10.,10.,10.,10.,10.,10.,10.,
  20.,20.,20.,20.,20.,20.,20.,20.,20.,20.,20.,20.,20.,20.,20.,20.,20.,20.,
@@ -61,9 +61,9 @@
  20.,20.,20.,20.,20.,20.,20.,20.,20.,20.,20.
  &
  &PARM05
- bathyFile='~/MITgcm_June20152005/MITgcm/TracerExperiments/InputFiles/bathy_smooth_360x360_NonUni_BarkleyLikeQuad.bin',
- hydrogThetaFile='~/MITgcm_June20152005/MITgcm/TracerExperiments/InputFiles/Lintmp_halfN_90zlev_360x360.bin',
- hydrogSaltFile='~/MITgcm_June20152005/MITgcm/TracerExperiments/InputFiles/Linsal_halfN_90zlev_360x360.bin'
+ bathyFile='../../InputFiles/bathy_smooth_360x360_NonUni_BarkleyLikeQuad.bin',
+ hydrogThetaFile='../../InputFiles/Lintmp_halfN_90zlev_360x360.bin',
+ hydrogSaltFile='../../InputFiles/Linsal_halfN_90zlev_360x360.bin'
  zonalWindFile='',
  meridWindFile='',
  &
