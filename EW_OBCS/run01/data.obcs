@@ -1,0 +1,24 @@
+# Open-boundaries
+ &OBCS_PARM01
+ OB_Jsouth=360*1,
+ OB_Jnorth=360*-1,
+ OB_Ieast=360*-1,
+ OB_Iwest=360*1,
+
+ useOBCSsponge=.FALSE.,
+ useOBCSbalance=.TRUE.,
+ useOrlanskiSouth=.TRUE.,
+ useOrlanskiEast=.TRUE.,
+ useOrlanskiWest=.TRUE.,
+ useOBCSprescribe=.TRUE.,
+#
+ OBEuFile = '../InputFiles/u_OBCS_run42_day03.bin',
+ OBEvFile = '../InputFiles/v_OBCS_run42_day03.bin',
+ OBWuFile = '../InputFiles/u_OBCS_run42_day03.bin',
+ OBWvFile = '../InputFiles/v_OBCS_run42_day03.bin',
+ &
+#Orlanski parameters
+ &OBCS_PARM02
+ cvelTimeScale=2000,
+ CMAX=0.45,
+ &
