@@ -1,0 +1,8 @@
+#Packages
+ &PACKAGES
+ useOBCS=.TRUE.,
+ usePTRACERS=.TRUE.,
+ useMNC=.TRUE.,
+ useGMREDI=.TRUE.,
+ useDIAGNOSTICS=.TRUE.,
+ &
