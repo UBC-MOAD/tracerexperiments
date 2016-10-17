@@ -1,19 +1,15 @@
 # Model parameters
 # Continuous equation parameters
  &PARM01
- viscAz=1.E-2,
- viscAh=1.E-2,
+ viscAz=1.E-5,
  viscC2Smag=2.2,
  useJamartWetPoints=.TRUE.,
- viscAhGridMax=1.0,
  implicitDiffusion=.TRUE.,
  implicitViscosity=.TRUE.,
  no_slip_sides=.TRUE.,
  no_slip_bottom=.TRUE.,
- ViscAhRemax=10,
- ViscAhGridMin=0.01,
  useStrainTensionVisc=.TRUE.,
- ivdc_kappa=0., 
+ ivdc_kappa=10., 
  diffKhT=0.0,
  diffKzT=1.E-5,
  diffKhS=0.0,
