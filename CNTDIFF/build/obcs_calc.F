@@ -1,1 +1,1 @@
-/home/kramosmu/MITgcm_June152005/MITgcm//pkg/obcs/obcs_calc.F
+/home/kramosmu/MITgcm//pkg/obcs/obcs_calc.F
