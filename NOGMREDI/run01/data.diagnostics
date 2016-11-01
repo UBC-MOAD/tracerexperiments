@@ -18,21 +18,9 @@
 #  fileFlags(n)     : specific code (8c string) for output file "n"
 #--------------------
  &DIAGNOSTICS_LIST
- fields(1:7,1) = 'ADVr_TH','ADVx_TH','ADVy_TH','DFrE_TH','DFrI_TH','DFxE_TH','DFyE_TH',
- filename(1) = 'FluxTH',
+ fields(1:10,1) = 'UTRAC01','VTRAC01','WTRAC01','ADVrTr01','ADVxTr01','ADVyTr01','DFrETr01','DFrITr01','DFxETr01','DFyETr01',
+ filename(1) = 'FluxTR01',
  frequency(1) = 43200.,
- fields(1:7,2) = 'ADVr_SLT','ADVx_SLT','ADVy_SLT','DFrE_SLT','DFrI_SLT','DFxE_SLT','DFyE_SLT',
- filename(2) = 'FluxSLT',
- frequency(2) = 43200.,
- fields(1:10,3) = 'UTRAC01','VTRAC01','WTRAC01','ADVrTr01','ADVxTr01','ADVyTr01','DFrETr01','DFrITr01','DFxETr01','DFyETr01',
- filename(3) = 'FluxTR01',
- frequency(3) = 43200.,
- fields(1:10,4) = 'UTRAC02','VTRAC02','WTRAC02','ADVrTr02','ADVxTr02','ADVyTr02','DFrETr02','DFrITr02','DFxETr02','DFyETr02',
- filename(4) = 'FluxTR02',
- frequency(4) = 43200., 
- fields(1:10,5) = 'UTRAC03','VTRAC03','WTRAC03','ADVrTr03','ADVxTr03','ADVyTr03','DFrETr03','DFrITr03','DFxETr03','DFyETr03',
- filename(5) = 'FluxTR03',
- frequency(5) = 43200.,
  &
 
  &DIAG_STATIS_PARMS
