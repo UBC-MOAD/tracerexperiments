@@ -24,5 +24,6 @@ Makefile.bak
 *.c
 *~
 *.pbs
+*.pbs.*
 mitgcmuv
 build/*
