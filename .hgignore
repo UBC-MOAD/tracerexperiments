@@ -13,10 +13,6 @@ syntax: glob
 STD*
 mitgcm.pbs.*
 *.nc
-*.F
-*.f
-*.o
-*.h
 *.log
 *.bin
 Makefile
