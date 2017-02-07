@@ -1,0 +1,22 @@
+# This file was copied over from the tutorial_tracer_adjsens example
+# This set-up makes is supposed to imitate temperature. That is, PTRACER(:,:,:,1) 
+# I have now set it up to trace nitrate concentrations 
+ &PTRACERS_PARM01
+ PTRACERS_ITER0=0,
+ PTRACERS_numInUse=2,
+ PTRACERS_names(1)='Tr1',
+ PTRACERS_units(1)='Mol/L',
+ PTRACERS_advScheme(1)=33,
+ PTRACERS_useGMRedi(1)=.TRUE. ,
+ PTRACERS_useKPP(1)=.FALSE. ,
+ PTRACERS_diffKh(1)=0.0, 
+ PTRACERS_initialFile(1)='../../InputFiles/Linnit90zlev_360x360.bin',
+ PTRACERS_names(2)='Tr2',
+ PTRACERS_units(2)='Mol/L',
+ PTRACERS_advScheme(2)=33,
+ PTRACERS_useGMRedi(2)=.TRUE. ,
+ PTRACERS_useKPP(2)=.FALSE. ,
+ PTRACERS_diffKh(2)=0.0,
+ PTRACERS_diffKr(2)=1E-3,
+ PTRACERS_initialFile(2)='../../InputFiles/Linnit90zlev_360x360.bin', 
+ &
