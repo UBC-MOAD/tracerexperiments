@@ -64,5 +64,5 @@
  hydrogSaltFile='../../InputFiles/Linsal90zlev_360x360.bin'
  zonalWindFile='',
  meridWindFile='',
- diffKrFile='../../InputFiles/KrDiff1E_7_1E_3_90zlev_360x360_Quad.bin',
+ diffKrFile='../../InputFiles/KrDiff1E_5_1E_4_90zlev_360x360_Quad.bin',
  &
