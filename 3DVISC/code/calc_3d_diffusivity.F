@@ -152,21 +152,21 @@ CEOP
           ENDDO
          ENDDO
         ENDDO
-      ELSEIF ( trIdentity.GT.GAD_TR1) THEN
+       ELSEIF ( trIdentity.GT.GAD_TR1) THEN
 
-       iTr = trIdentity - GAD_TR1 + 1
-       DO k = 1,Nr
-        DO j = 1-OLy, sNy+OLy
-         DO i = 1-OLx, sNx+OLx
-          KappaRTr(i,j,k) = KappaRTr(i,j,k)
-      #ifdef ALLOW_3D_DIFFKR /* KRM added to remove the effect of 3d diff */
-      &          + PTRACERS_diffKrNr(k,iTr)
-      #else
-      &          + PTRACERS_diffKrNr(k,iTr)
-      #endif
+        iTr = trIdentity - GAD_TR1 + 1
+        DO k = 1,Nr
+         DO j = 1-OLy, sNy+OLy
+          DO i = 1-OLx, sNx+OLx
+           KappaRTr(i,j,k) = KappaRTr(i,j,k)
+#ifdef ALLOW_3D_DIFFKR
+     &          + PTRACERS_diffKrNr(k,iTr)
+#else
+     &          + PTRACERS_diffKrNr(k,iTr)
+#endif
+          ENDDO
          ENDDO
         ENDDO
-       ENDDO
 
 #endif /* ALLOW_PTRACERS */
        ELSE
