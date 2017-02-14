@@ -5,4 +5,5 @@
  useMNC=.TRUE.,
  useGMREDI=.TRUE.,
  useDIAGNOSTICS=.TRUE.,
+ useKPP=.FALSE.,
  &
