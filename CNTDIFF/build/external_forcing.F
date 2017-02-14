@@ -1,1 +1,1 @@
-/home/kramosmu/MITgcm//model/src/external_forcing.F
+../code//external_forcing.F
