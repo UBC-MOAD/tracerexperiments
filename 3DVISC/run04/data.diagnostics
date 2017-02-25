@@ -27,6 +27,9 @@
   fields(1:10,3) = 'UTRAC01','VTRAC01','WTRAC01','ADVrTr01','ADVxTr01','ADVyTr01','DFrETr01','DFrITr01','DFxETr01','DFyETr01',
   filename(3) = 'FluxTR01',
   frequency(3) = 43200., 
+  fields(1:10,4) = 'UTRAC02','VTRAC02','WTRAC02','ADVrTr02','ADVxTr02','ADVyTr02','DFrETr02','DFrITr02','DFxETr02','DFyETr02',
+  filename(4) = 'FluxTR02',
+  frequency(4) = 43200.,
 
  &
 
