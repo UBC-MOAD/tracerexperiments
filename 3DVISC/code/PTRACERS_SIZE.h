@@ -16,7 +16,7 @@ C  and is set here (default 1)
 C
 C     Number of tracers
       INTEGER PTRACERS_num
-      PARAMETER(PTRACERS_num = 1 )
+      PARAMETER(PTRACERS_num = 3 )
 
 CEOP
 #endif /* ALLOW_PTRACERS */
