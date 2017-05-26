@@ -37,8 +37,8 @@
  &
 # Time stepping parameters
  &PARM03
- nIter0=0,
- nTimeSteps=19440, 
+ nIter0=11610,
+ nTimeSteps=7830, 
  deltaT=40,
 # pChkptFreq=259200.0,
  chkptFreq=10800.0,
@@ -47,6 +47,7 @@
  periodicExternalForcing=.FALSE.,
 # externForcingPeriod=40,
 # externForcingCycle=86400.0,
+ pickupSuff = 'ckptA', 
  &
 # Gridding parameters
  &PARM04
