@@ -37,13 +37,12 @@
  &
 # Time stepping parameters
  &PARM03
- nIter0=0,
- nTimeSteps=77760, 
- deltaT=10,
-# pChkptFreq=259200.0,
- chkptFreq=10800.0,
- dumpFreq=43200.0,
-# monitorFreq=43200.0,
+ nIter0=49680,
+ nTimeSteps=300, 
+ deltaT=40,
+ pickupSuff='ckptB',
+ chkptFreq=800.0,
+ dumpFreq=800.0,
  periodicExternalForcing=.FALSE.,
 # externForcingPeriod=40,
 # externForcingCycle=86400.0,
