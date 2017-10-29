@@ -38,7 +38,7 @@
  nTimeSteps=19440, 
  deltaT=40,
 # pChkptFreq=259200.0,
-# chkptFreq=10800.0,
+ chkptFreq=10800.0,
  dumpFreq=43200.0,
 # monitorFreq=43200.0,
  periodicExternalForcing=.FALSE.,
