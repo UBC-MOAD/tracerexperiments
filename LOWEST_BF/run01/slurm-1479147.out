@@ -1,0 +1,37 @@
+Current working directory is /scratch/kramosmu/MITgcm/tracerexperiments/LOWEST_BF_run01
+Diagnostics combining
+Writing non-record variables
+Writing 18 records: ..................
+Writing 23 more slices: .......................
+Tiled dimensions: Xp1 Y X Yp1
+Record dimension: T
+Writing non-record variables
+Writing 18 records: ..................
+Writing 23 more slices: .......................
+Tiled dimensions: Xp1 Y X Yp1
+Record dimension: T
+Writing non-record variables
+Writing 18 records: ..................
+Writing 23 more slices: .......................
+Tiled dimensions: X Y Xp1 Yp1
+Record dimension: T
+Writing non-record variables
+Writing 18 records: ..................
+Writing 23 more slices: .......................
+Tiled dimensions: X Y Xp1 Yp1
+Record dimension: T
+
+The following have been reloaded with a version change:
+  1) python/2.7.13 => python/3.5.2
+
+
+Lmod is automatically replacing "hdf5-mpi/1.8.18" with "hdf5/1.8.18".
+
+
+Lmod is automatically replacing "netcdf-mpi/4.4.1.1" with "netcdf/4.4.1.1".
+
+Starting compression
+/scratch/kramosmu/MITgcm/tracerexperiments/LOWEST_BF_run01
+Compressing files
+Done compressing run
+done combining and deflating diagnostics
