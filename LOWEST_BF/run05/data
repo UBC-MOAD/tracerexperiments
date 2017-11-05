@@ -29,6 +29,7 @@
  staggerTimeStep=.TRUE.,
  bottomDragQuadratic=0.002,
  vectorInvariantMomentum=.TRUE.,
+ momTidalForcing=.FALSE., 
  &
 # Elliptic solver parameters
  &PARM02
@@ -52,8 +53,8 @@
  &PARM04
  usingCartesianGrid=.TRUE.,
  ygOrigin=0.,
- delXfile='../../InputFiles/delx_360x360_NonUni_BarkleyLikeQuad.bin',
- delYfile='../../InputFiles/dely_360x360_NonUni_BarkleyLikeQuad.bin',
+ delXfile='../../InputFiles/delx_616x360_NonUni_BarkleyLikeQuadExt.bin',
+ delYfile='../../InputFiles/dely_616x360_NonUni_BarkleyLikeQuadExt.bin',
  delZ= 5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,
  5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,10.,10.,10.,10.,10.,10.,10.,10.,10.,
  20.,20.,20.,20.,20.,20.,20.,20.,20.,20.,20.,20.,20.,20.,20.,20.,20.,20.,
@@ -61,9 +62,9 @@
  20.,20.,20.,20.,20.,20.,20.,20.,20.,20.,20.
  &
  &PARM05
- bathyFile='../../InputFiles/bathy_smooth_360x360_NonUni_BarkleyLikeQuad.bin',
- hydrogThetaFile='../../InputFiles/Lintmp_N7p4_90zlev_360x360.bin',
- hydrogSaltFile='../../InputFiles/Linsal_N7p4_90zlev_360x360.bin'
+ bathyFile='../../InputFiles/bathy_smooth_616x360_NonUni_BarkleyLikeQuadExt.bin',
+ hydrogThetaFile='../../InputFiles/Lintmp_N7p4_90zlev_616x360.bin',
+ hydrogSaltFile='../../InputFiles/Linsal_N7p4_90zlev_616x360.bin'
  zonalWindFile='',
  meridWindFile='',
  &
