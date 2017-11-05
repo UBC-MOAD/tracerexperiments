@@ -37,9 +37,10 @@
  &
 # Time stepping parameters
  &PARM03
- nIter0=0,
- nTimeSteps=19440, 
+ nIter0=17010,
+ nTimeSteps=2430, 
  deltaT=40,
+ pickupSuff = 'ckptA', 
 # pChkptFreq=259200.0,
  chkptFreq=10800.0,
  dumpFreq=43200.0,
