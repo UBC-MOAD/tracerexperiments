@@ -15,6 +15,7 @@ module load python/2.7.13
 
 
 cd /scratch/kramosmu/MITgcm/tracerexperiments/LOWEST_BF_run08
+
 echo "Current working directory is `pwd`"
 
 echo "Fields combining"

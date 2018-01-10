@@ -1,1 +1,1 @@
-/home/kramosmu/MITgcm//pkg/obcs/obcs_calc.F
+../code//obcs_calc.F

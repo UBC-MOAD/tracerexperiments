@@ -4,7 +4,7 @@
 #SBATCH --nodes=4
 #SBATCH --ntasks-per-node=32
 #SBATCH --mem=100GB
-#SBATCH --time=15:00:00
+#SBATCH --time=06:00:00
 #SBATCH --mail-user=kramosmu@eos.ubc.ca
 #SBATCH --mail-type=ALL
 #SBATCH --account=def-allen

@@ -63,8 +63,8 @@
  &
  &PARM05
  bathyFile='../../InputFiles/bathy_smooth_616x360_NonUni_BarkleyLikeQuadExt.bin',
- hydrogThetaFile='../../InputFiles/Lintmp90zlev_616x360.bin',
- hydrogSaltFile='../../InputFiles/Linsal90zlev_616x360.bin'
+ hydrogThetaFile='../../InputFiles/Lintmp_N5p5_90zlev_616x360.bin',
+ hydrogSaltFile='../../InputFiles/Linsal_N5p5_90zlev_616x360.bin'
  zonalWindFile='',
  meridWindFile='',
  &

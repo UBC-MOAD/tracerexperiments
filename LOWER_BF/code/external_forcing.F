@@ -163,7 +163,7 @@ C---Short Time, ramp up time before starting a constant forcing
 C---Max. Velocity U-dir at Coast (m/s) 
       Umax= 0.265
 C-- Final, steady forcing ratio
-      sr = 0.10
+      sr = 0.125
 C---Max. Forcing at Coast (accel.)
       gUmax=Umax/(FT + ST/2.) 
 C---Slope of forcing 
