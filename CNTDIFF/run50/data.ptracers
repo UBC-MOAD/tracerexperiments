@@ -10,8 +10,8 @@
  PTRACERS_useGMRedi(1)=.TRUE. ,
  PTRACERS_useKPP(1)=.FALSE. ,
  PTRACERS_diffKh(1)=0.0,
- PTRACERS_diffKr(1)=1E-7, 
- PTRACERS_initialFile(1)='../../InputFiles/Linnit90zlev_360x360.bin',
+ PTRACERS_diffKr(1)=1E-5, 
+ PTRACERS_initialFile(1)='../../InputFiles/Linnit90zlev_616x360.bin',
  PTRACERS_names(2)='Tr2',
  PTRACERS_units(2)='Mol/L',
  PTRACERS_advScheme(2)=33,
@@ -19,5 +19,5 @@
  PTRACERS_useKPP(2)=.FALSE. ,
  PTRACERS_diffKh(2)=0.0,
  PTRACERS_diffKr(2)=1E-7,
- PTRACERS_initialFile(2)='../../InputFiles/Linnit90zlev_360x360.bin', 
+ PTRACERS_initialFile(2)='../../InputFiles/Linnit90zlev_616x360.bin', 
  &

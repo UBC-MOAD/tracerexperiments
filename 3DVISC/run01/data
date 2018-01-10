@@ -26,6 +26,7 @@
  staggerTimeStep=.TRUE.,
  bottomDragQuadratic=0.002,
  vectorInvariantMomentum=.TRUE.,
+ momTidalForcing=.FALSE.,
  &
 # Elliptic solver parameters
  &PARM02
@@ -58,9 +59,9 @@
  20.,20.,20.,20.,20.,20.,20.,20.,20.,20.,20.
  &
  &PARM05
- bathyFile='../../InputFiles/bathy_smooth_616x360_NonUni_BarkleyLikeQuad.bin',
+ bathyFile='../../InputFiles/bathy_smooth_616x360_NonUni_BarkleyLikeQuadExt.bin',
  hydrogThetaFile='../../InputFiles/Lintmp_N5p5_90zlev_616x360.bin',
- hydrogSaltFile='../../InputFiles/Linsal_N5p5_90zlev_616x360.bin'
+ hydrogSaltFile='../../InputFiles/Linsal_N5p5_90zlev_616x360.bin',
  zonalWindFile='',
  meridWindFile='',
  diffKrFile='../../InputFiles/KrDiff1E_7_1E_3_90zlev_616x360_Quad.bin',

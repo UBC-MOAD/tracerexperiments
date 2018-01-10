@@ -29,6 +29,7 @@
  staggerTimeStep=.TRUE.,
  bottomDragQuadratic=0.002,
  vectorInvariantMomentum=.TRUE.,
+ momTidalForcing=.FALSE.,
  &
 # Elliptic solver parameters
  &PARM02

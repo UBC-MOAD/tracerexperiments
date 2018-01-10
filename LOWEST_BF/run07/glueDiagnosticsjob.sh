@@ -3,7 +3,7 @@
 #SBATCH --job-name=glueDiagnostics_LOWESTBFrun07  
 #SBATCH --ntasks=1 
 #SBATCH --mem=100Gb
-#SBATCH --time=02:00:00
+#SBATCH --time=01:00:00
 #SBATCH --mail-user=kramosmu@eos.ubc.ca
 #SBATCH --mail-type=ALL
 #SBATCH --account=def-allen

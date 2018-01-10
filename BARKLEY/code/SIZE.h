@@ -36,14 +36,14 @@ C     Nr  - No. points in R for full process domain.
       INTEGER Ny
       INTEGER Nr
       PARAMETER (
-     &           sNx =  30,
-     &           sNy =  30,
+     &           sNx =  11,
+     &           sNy =  15,
      &           OLx =   3,
      &           OLy =   3,
-     &           nSx =   3,
+     &           nSx =   4,
      &           nSy =   3,
-     &           nPx =   4,
-     &           nPy =   4,
+     &           nPx =   14,
+     &           nPy =   8,
      &           Nx  = sNx*nSx*nPx,
      &           Ny  = sNy*nSy*nPy,
      &           Nr  =   90)
