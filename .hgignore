@@ -24,7 +24,7 @@ Makefile.bak
 mitgcmuv
 build/*
 InputFiles/*
-code/*.f
-code/*.h
-code/*.F
+build/*.f
+build/*.h
+build/*.F
 *.out
