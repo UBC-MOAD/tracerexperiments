@@ -41,30 +41,31 @@
  nIter0=0,
  nTimeSteps=19440, 
  deltaT=40,
-# pChkptFreq=259200.0,
- chkptFreq=777600.0,
+ chkptFreq=777700.0,
  dumpFreq=43200.0,
-# monitorFreq=43200.0,
  periodicExternalForcing=.FALSE.,
-# externForcingPeriod=40,
-# externForcingCycle=86400.0,
  &
 # Gridding parameters
  &PARM04
  usingCartesianGrid=.TRUE.,
  ygOrigin=0.,
- delXfile='../../InputFiles/delx_616x360_NonUni_BarkleyLikeQuadExt.bin',
- delYfile='../../InputFiles/dely_616x360_NonUni_BarkleyLikeQuadExt.bin',
- delZ= 5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,
- 5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,10.,10.,10.,10.,10.,10.,10.,10.,10.,
- 20.,20.,20.,20.,20.,20.,20.,20.,20.,20.,20.,20.,20.,20.,20.,20.,20.,20.,
- 20.,20.,20.,20.,20.,20.,20.,20.,20.,20.,20.,20.,20.,20.,20.,20.,20.,20.,
- 20.,20.,20.,20.,20.,20.,20.,20.,20.,20.,20.
+ delXfile='../../InputFiles/delx_616x360_NonUni_NoCanyonQuad.bin',
+ delYfile='../../InputFiles/dely_616x360_NonUni_NoCanyonQuad.bin',
+ delZ = 5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,
+ 5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,
+ 5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,
+ 5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,
+ 5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,
+ 5.,5.,10.,10.,10.,20.,20.,20.,20.,20.,
+ 20.,20.,20.,20.,20.,20.,20.,20.,20.,20.,
+ 20.,20.,20.,20.,20.,20.,20.,20.,20.,20.,
+ 40.,40.,40.,40.,40.,40.,40.,40.,40.,40.,
+ 
  &
  &PARM05
- bathyFile='../../InputFiles/bathy_smooth_616x360_NonUni_BarkleyLikeQuadExt.bin',
- hydrogThetaFile='../../InputFiles/Lintmp_N5p5_90zlev_616x360.bin',
- hydrogSaltFile='../../InputFiles/Linsal_N5p5_90zlev_616x360.bin',
+ bathyFile='../../InputFiles/bathy_smooth_616x360_NonUni_NoCanyonQuad.bin',
+ hydrogThetaFile='../../InputFiles/Lintmp_N5p5_90zlev_newRes_616x360.bin',
+ hydrogSaltFile='../../InputFiles/Linsal_N5p5_90zlev_newRes_616x360.bin'
  zonalWindFile='',
  meridWindFile='',
  &
