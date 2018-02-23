@@ -19,6 +19,6 @@ cd /scratch/kramosmu/MITgcm/tracerexperiments/BARKLEY_run01
 echo "Current working directory is `pwd`"
 
 echo "Diagnostics combining"
-bash $PROJECT/kramosmu/MITgcm/utils/scripts/glueDiagnostics.sh
-bash $PROJECT/kramosmu/MITgcm/utils/scripts/deflateDiagnostics.sh
+bash $PROJECT/kramosmu/MITgcm/utils/scripts/glueDiagnostics8Tr.sh
+bash $PROJECT/kramosmu/MITgcm/utils/scripts/deflateDiagnostics8Tr.sh
 echo "done combining and deflating diagnostics"

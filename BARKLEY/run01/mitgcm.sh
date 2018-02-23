@@ -14,6 +14,7 @@ module load netcdf-mpi/4.4.1.1
 module load netcdf-fortran-mpi/4.4.4
 module load python
 
+newgrp def-allen
 
 echo "Current working directory is `pwd`"
 
