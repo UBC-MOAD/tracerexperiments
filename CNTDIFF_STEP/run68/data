@@ -1,0 +1,71 @@
+# Model parameters
+# Continuous equation parameters
+ &PARM01
+ viscC2Smag=2.2,
+ viscAz=1.E-5,
+ useJamartWetPoints=.TRUE.,
+ implicitDiffusion=.TRUE.,
+ implicitViscosity=.TRUE.,
+ no_slip_sides=.FALSE.,
+ no_slip_bottom=.FALSE.,
+ useStrainTensionVisc=.TRUE.,
+ ivdc_kappa=10.,
+ diffKhT=0.0,
+ diffKzT=1.E-5,
+ diffKhS=0.0,
+ diffKzS=1.E-5,
+ f0=1.00E-4,
+ beta=0.E-11,
+ tAlpha=2.E-4,
+ sBeta =7.4E-4,
+ gravity=9.81,
+ rigidLid=.FALSE.,
+ implicitFreeSurface=.TRUE.,
+ readBinaryPrec=64,
+ hFacMin=0.1,
+ nonHydrostatic=.FALSE., 
+ saltAdvScheme=33,
+ tempAdvScheme=33,
+ staggerTimeStep=.TRUE.,
+ bottomDragQuadratic=0.002,
+ vectorInvariantMomentum=.TRUE.,
+ momTidalForcing=.FALSE., 
+ &
+# Elliptic solver parameters
+ &PARM02
+ cg2dMaxIters=200,
+ cg2dTargetResidual=1.E-7,
+ &
+# Time stepping parameters
+ &PARM03
+ nIter0=0,
+ nTimeSteps=19440, 
+ deltaT=40,
+ chkptFreq=777700.0,
+ dumpFreq=43200.0,
+ periodicExternalForcing=.FALSE.,
+ &
+# Gridding parameters
+ &PARM04
+ usingCartesianGrid=.TRUE.,
+ ygOrigin=0.,
+ delXfile='../../InputFiles/delx_616x360_NonUni_NoCanyonQuad.bin',
+ delYfile='../../InputFiles/dely_616x360_NonUni_NoCanyonQuad.bin',
+ delZ = 5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,
+ 5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,
+ 5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,
+ 5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,
+ 5.,5.,5.,5.,5.,5.,5.,5.,5.,5.,
+ 5.,5.,10.,10.,10.,20.,20.,20.,20.,20.,
+ 20.,20.,20.,20.,20.,20.,20.,20.,20.,20.,
+ 20.,20.,20.,20.,20.,20.,20.,20.,20.,20.,
+ 40.,40.,40.,40.,40.,40.,40.,40.,40.,40.,
+ 
+ &
+ &PARM05
+ bathyFile='../../InputFiles/bathy_smooth_616x360_NonUni_NoCanyonQuad.bin',
+ hydrogThetaFile='../../InputFiles/Lintmp_N5p5_90zlev_newRes_616x360.bin',
+ hydrogSaltFile='../../InputFiles/Linsal_N5p5_90zlev_newRes_616x360.bin'
+ zonalWindFile='',
+ meridWindFile='',
+ &
