@@ -1,0 +1,54 @@
+# Diagnostic Package Choices
+#--------------------
+#  dumpAtLast (logical): always write output at the end of simulation (default=F)
+#  diag_mnc   (logical): write to NetCDF files (default=useMNC)
+#--for each output-stream:
+#  fileName(n) : prefix of the output file name (max 80c long) for outp.stream n
+#  frequency(n):< 0 : write snap-shot output every |frequency| seconds
+#               > 0 : write time-average output every frequency seconds
+#  timePhase(n)     : write at time = timePhase + multiple of |frequency|
+#    averagingFreq  : frequency (in s) for periodic averaging interval
+#    averagingPhase : phase     (in s) for periodic averaging interval
+#    repeatCycle    : number of averaging intervals in 1 cycle
+#  levels(:,n) : list of levels to write to file (Notes: declared as REAL)
+#                when this entry is missing, select all common levels of this list
+#  fields(:,n) : list of selected diagnostics fields (8.c) in outp.stream n
+#                (see "available_diagnostics.log" file for the full list of diags)
+#  missing_value(n) : missing value for real-type fields in output file "n"
+#  fileFlags(n)     : specific code (8c string) for output file "n"
+#--------------------
+ &DIAGNOSTICS_LIST
+  fields(1:7,1) = 'ADVrTr01','ADVxTr01','ADVyTr01','DFrETr01','DFrITr01','DFxETr01','DFyETr01',
+  filename(1) = 'FluxTR01',
+  frequency(1) = 43200.,
+  fields(1:7,2) = 'ADVrTr02','ADVxTr02','ADVyTr02','DFrETr02','DFrITr02','DFxETr02','DFyETr02',
+  filename(2) = 'FluxTR02',
+  frequency(2) = 43200.,
+  fields(1:7,3) = 'ADVrTr03','ADVxTr03','ADVyTr03','DFrETr03','DFrITr03','DFxETr03','DFyETr03',
+  filename(3) = 'FluxTR03',
+  frequency(3) = 43200.,
+  fields(1:7,4) = 'ADVrTr04','ADVxTr04','ADVyTr04','DFrETr04','DFrITr04','DFxETr04','DFyETr04',
+  filename(4) = 'FluxTR04',
+  frequency(4) = 43200.,
+  fields(1:7,5) = 'ADVrTr05','ADVxTr05','ADVyTr05','DFrETr05','DFrITr05','DFxETr05','DFyETr05',
+  filename(5) = 'FluxTR05',
+  frequency(5) = 43200.,
+  fields(1:7,6) = 'ADVrTr06','ADVxTr06','ADVyTr06','DFrETr06','DFrITr06','DFxETr06','DFyETr06',
+  filename(6) = 'FluxTR06',
+  frequency(6) = 43200.,
+  fields(1:7,7) = 'ADVrTr07','ADVxTr07','ADVyTr07','DFrETr07','DFrITr07','DFxETr07','DFyETr07',
+  filename(7) = 'FluxTR07',
+  frequency(7) = 43200.,
+  fields(1:7,8) = 'ADVrTr08','ADVxTr08','ADVyTr08','DFrETr08','DFrITr08','DFxETr08','DFyETr08',
+  filename(8) = 'FluxTR08',
+  frequency(8) = 43200.,
+  fields(1:7,9) = 'ADVrTr09','ADVxTr09','ADVyTr09','DFrETr09','DFrITr09','DFxETr09','DFyETr09',
+  filename(9) = 'FluxTR09',
+  frequency(9) = 43200.,
+  fields(1:7,10) = 'ADVrTr10','ADVxTr10','ADVyTr10','DFrETr10','DFrITr10','DFxETr10','DFyETr10',
+  filename(10) = 'FluxTR10',
+  frequency(10) = 43200.,
+ &
+
+ &DIAG_STATIS_PARMS
+ &
