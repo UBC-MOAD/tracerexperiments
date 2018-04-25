@@ -7,7 +7,7 @@
 #SBATCH --time=06:00:00
 #SBATCH --mail-user=kramosmu@eos.ubc.ca
 #SBATCH --mail-type=ALL
-#SBATCH --account=rrg-allen
+#SBATCH --account=def-allen
 
 
 module load netcdf-mpi/4.4.1.1
