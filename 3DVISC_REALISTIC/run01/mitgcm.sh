@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#SBATCH --job-name=3DVISC06
+#SBATCH --job-name=3DVISC01
 #SBATCH --nodes=4
 #SBATCH --ntasks-per-node=32
 #SBATCH --mem=100GB

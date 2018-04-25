@@ -25,3 +25,5 @@ mitgcmuv
 build/*
 InputFiles/*
 *.out
+slurm*.out
+
