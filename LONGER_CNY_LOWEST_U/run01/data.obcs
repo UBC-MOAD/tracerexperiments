@@ -1,0 +1,13 @@
+# Open-boundaries
+ &OBCS_PARM01
+ OB_Jsouth=616*1,
+ OB_Jnorth=616*-1,
+ useOBCSsponge=.FALSE.,
+ useOBCSbalance=.TRUE.,
+ useOrlanskiSouth=.TRUE.,
+ &
+#Orlanski parameters
+ &OBCS_PARM02
+ cvelTimeScale=2000,
+ CMAX=0.45,
+ &
