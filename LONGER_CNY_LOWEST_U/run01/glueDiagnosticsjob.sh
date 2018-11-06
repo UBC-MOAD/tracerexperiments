@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#SBATCH --job-name=glueDiagnostics_LONGER_CNY_LOWEST_U01
+#SBATCH --job-name=2glueDiagnostics_LONGER_CNY_LOWEST_U01
 #SBATCH --ntasks=1 
 #SBATCH --mem=100Gb
 #SBATCH --time=01:30:00

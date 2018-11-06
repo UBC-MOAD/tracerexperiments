@@ -1,6 +1,7 @@
 #!/bin/bash
 
-#SBATCH --job-name=LONGER_CNY_LOWEST_U_01
+#SBATCH --job-name=2_LONGER_CNY_LOWEST_U_01
+#SBATCH --constraint=broadwell
 #SBATCH --nodes=4
 #SBATCH --ntasks-per-node=32
 #SBATCH --mem=100GB
